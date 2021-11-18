@@ -11,16 +11,7 @@
     align-items: center;
   }
 }
-.logo{
-  font-size: 36px;
-  @extend %rubik-500;
-  color: $accent;
-  line-height: 1.611;
-  text-align: left;
-  &__img{
-    display: inline-block;   
-  }
-}
+
 .menu{
   &__list{
     display: flex;
@@ -125,6 +116,109 @@
     }
   }
 }
+
+.footer{
+  padding: 80px 0 30px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #7b7b7b;
+  margin-bottom: 70px;
+  .logo{
+    font-size: 36px;
+    @extend %rubik-500;
+    color: $accent;
+    line-height: 1.611;
+    text-align: left;
+    &__img{
+      display: inline-block;   
+    }
+  }
+  &__item a{
+    display: block;
+    margin-bottom: 10px;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #7b7b7b;
+  }
+  &__title{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    @extend %dmans-700;
+    text-transform: uppercase;
+  }
+  &__address{
+    max-width: 200px;
+  }
+  &__item-newsletter{
+    //max-width: 270px;
+    margin-left: 100px;
+  }
+  &__newsletter-link{
+    max-width: 270px;
+    padding-bottom: 35px;
+  }
+}
+.footer-top__form{
+  &-input{
+    min-width: 170px;
+    padding: 12px 0 12px 13px;
+    background-color: #fef7f0;
+    border: none;
+    @extend %dmans-400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #234969;
+  }
+  &-btn{
+    padding: 12px 0;
+    min-width: 90px;
+    background-color: #a3bbc8;
+    border: none;
+    font-size: 12px;
+    line-height: 21px;
+    @extend %dmans-400;
+    color: #ffffff;
+    margin-left: -5px;
+  }
+}
+
+.footer-bottom{
+  padding: 35px 0 35px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dae4e9;
+  @extend %rubik-400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #7b7b7b;
+}
+
+.footer-menu{
+  &__list{
+    display: flex;
+  }
+  &__list-link {
+    margin-left: 30px;
+    color: #7b7b7b;
+  }
+  &__list-link::before{
+    content: "|";
+    font-size: 18px;
+    color: #7b7b7b;
+    margin-right: 20px;
+  }
+  
+}
+
+
+
+
 
 
 @import 'media';

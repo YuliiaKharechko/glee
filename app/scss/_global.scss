@@ -17,3 +17,14 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.logo{
+  font-size: 36px;
+  @extend %rubik-500;
+  color: $accent;
+  line-height: 1.611;
+  text-align: left;
+  &__img{
+    display: inline-block;   
+  }
+}
