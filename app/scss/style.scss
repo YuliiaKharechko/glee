@@ -88,6 +88,44 @@
   }
 }
 
+.header__slider{
+  margin: 45px 0 47px;
+  background-color: #fcd7b6;
+  &-item{
+  
+    
+  }
+  &-title{
+    padding: 226px 0 46px;
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title;
+  }
+  &-text{
+    @extend %rubik-400;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 30;
+    color: #436372;
+  }
+  &-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 19px 21px 27px;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #a3bbc8;
+    border: none;
+    & img{
+      padding-left: 60px;
+    }
+  }
+}
+
 
 @import 'media';
 
