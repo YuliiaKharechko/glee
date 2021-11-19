@@ -53,7 +53,6 @@
   &__img--heart,
   &__img--cart{
     position: relative;
-    padding-left: 10px;
   }
   &__num{
     display: block;
@@ -66,7 +65,7 @@
     color: $accent;
     position: absolute;
     top: 70px;
-    margin-left: 24px;
+    right: 255px;
     border-radius: 50%;
     background-color: #fff;
   }
@@ -165,10 +164,9 @@
   }
   &__inner-img{
     margin-right: 24px;
-    
   }
   &__inner-item{
-    max-width: 180px; 
+    max-width: 200px; 
   }
   &__inner-title{
     @extend %dmans-700;
@@ -183,8 +181,8 @@
   &__inner-title::before{
     content: '';
     position: absolute;
-    right: 198px;
-    top: 58px;
+    right: 220px;
+    top: 60px;
     width: 20px;
     height: 20px;
     opacity: 0.5;
@@ -192,6 +190,75 @@
     border-radius: 50%;
   }
 }
+
+.products{
+  background-color: #fdfdfd;
+}
+.products-nav{
+  padding: 74px 0 92px;
+  &__title{
+    @extend %dmans-700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #191919;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__filter{
+    text-align: center;
+  }
+  &__filter-btn{
+    @extend %dmans-700;
+    color: #8b8b8b;
+    margin-bottom: 80px;
+    border: none;
+    background-color: transparent;
+    margin-right: 15px;
+  }
+  &__filter-btn:hover,
+  &__filter-btn:active{
+    color: #191919;
+  }
+}
+
+.products-nav__content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 40px;
+  grid-column-gap: 30px;
+
+  &-item{
+    background-color: #fffff;
+    max-width: 270px;
+    min-height: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-img{
+    max-height: 165px;
+    padding-top: 27px;
+    position: relative;
+    z-index: 1;
+  }
+  &-title{
+    padding-top: 75px;
+    font-size: 16px;
+    line-height: 40px;
+    @extend %dmans-500;
+    color: $title;
+  }
+  &-text{
+    font-size: 16px;
+    line-height: 40px;
+    line-height: 40px;
+    @extend %dmans-700;
+    color: #a3bbc8;
+  }
+}
+
+
 
 
 
@@ -281,18 +348,23 @@
 .footer-menu{
   &__list{
     display: flex;
+    justify-content: space-evenly;
   }
   &__list-link {
-    margin-left: 30px;
+    margin-left: 40px;
     color: #7b7b7b;
     position: relative;
-  }
+  } 
+
   &__list-link::before{
-    content: "|";
+    content: " ";
+    display: flex;
     position: absolute;
-    font-size: 18px;
-    color: #7b7b7b;
-    margin-right: 20px;
+    border-right: 1px solid #7b7b7b;
+    top: 0;
+    width: 10px;
+    height: 15px;
+    right: 48px;
   }
 }
 
