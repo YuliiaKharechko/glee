@@ -59,27 +59,56 @@
     </div>
   </header>
   
-  <main class="main">>
+  <main class="main">
     <section class="top">
-      <div class="container">
-        <h2 class="top__title">Log in</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs_item">
-              <a class="breadcrumbs__link" href="#">
-                Home
-              </a>
-            </li>
-            <li class="breadcrumbs_item">
-              <a class="breadcrumbs__link" href="#">
-                Log in
-              </a>
-            </li>
-          </ul>
+      <div class="top__container">
+        <div class="container">
+          <h2 class="top__title">Log in</h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Log in
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+        
+      </div>
+    </section>
+    <section class="modal">
+      <div class="container-s">
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            Username or email address *
+            <input class="modal__input" ttype="text" required>
+            Password *
+            <input class="modal__input" ttype="password" required>
+          </label>
+          <button class="modal__btn" type="submit">Login</button>
+          <label class="modal__label">
+            <input  type="checkbox">
+            Remember me
+            <a class="modal__error" href="#">Lost your password?</a>
+          </label> 
+        </form>
+        <div class="modal__links">
+          <p class="modal__text">
+            Not registered? No problem
+          </p>
+          <a href="#" class="modal__link">Create an account</a>
         </div>
       </div>
 
     </section>
+
+
   </main>
 
   <footer class="footer">

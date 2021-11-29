@@ -74,6 +74,63 @@
   }
 }
 
+.top__container{
+  
+  text-align: center;
+} 
+.container {
+  padding: 35px 0 34px;
+  width: 100%;
+  height: 125px;
+  margin: 0 auto;
+  background-color: #edf1f4;
+
+  &__title{
+    font-size: 36px;
+    line-height: 24px;
+    @extend %rubik-400;
+    color: #222933;
+  }
+  
+}
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+  &__item + .breadcrumbs__item{
+    padding-left: 25px;
+  }
+  &__item {
+    position: relative;
+    &::after{
+      content: "/";
+      position: absolute;
+      font-size: 18px;
+      @extend %rubik-400;
+      color: #9a9ea2;
+      top: 0;
+      right: -15px;
+    }
+    &:last-child{
+      color: #9a9ea2;
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: #9a9ea2;
+  }
+}
+
+
+
+
 .top-slider{
   padding: 224px 0 45px;
   background-image: url('../images/slider-bg-elipce.jpg');
@@ -696,6 +753,75 @@ padding: 75px 0 75px;
     }
   } 
 }
+
+.modal{
+  background-color: #fff;
+  padding-top: 100px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  &__label{
+    display: block;
+    font-size: 14px;
+    color: #436372;
+    margin-bottom: 15px;
+  }
+  &__input{
+    height: 60px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    background-color: #fff;
+  }
+  &__btn{
+    margin: 20px 0 20px;
+    width: 100%;
+    padding: 20px 0 17px;
+    color: #fff;
+    font-size: 18px;
+    @extend %rubik-500;
+    background-color: #a3bbc8;
+    cursor: pointer;
+    border: none;
+  }
+  &__error{
+    display: inline-block;
+    margin-left: 190px;
+    font-size: 14px;
+    color: #436372;
+    margin-bottom: 25px;
+  }
+  &__links{
+    padding-top: 25px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      border-bottom: 2px solid #f6f6f6;
+      width: 100%;
+      top: 0;
+    }
+  }
+  &__text{
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #436372;
+    margin-bottom: 20px;
+  }
+  &__link{
+    display: block;
+    width: 100%;
+    padding: 20px 0 20px;
+    border: 2px solid #a3bbc8;
+    text-align: center;
+    font-size: 18px;
+    
+    color: #243f4d;
+  }
+}
+
 
 
 
