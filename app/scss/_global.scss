@@ -29,6 +29,11 @@ body{
   padding: 0 15px;
 }
 
+.header--404-page{
+  background-color: #fef7f0;
+}
+
+
 .logo{
   font-size: 36px;
   @extend %rubik-500;
