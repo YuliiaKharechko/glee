@@ -75,16 +75,13 @@
 }
 
 
-.top-login__container{
-  
+.top__container{
   text-align: center;
-
   padding: 35px 0 34px;
   width: 100%;
   height: 125px;
   margin: 0 auto;
   background-color: #edf1f4;
-
   &__title{
     font-size: 36px;
     line-height: 24px;
@@ -859,6 +856,215 @@ padding: 75px 0 75px;
     max-width: 500px;
   }
 }
+.terms{
+  padding: 110px 0 70px;
+  &__title{
+    font-size: 24px;
+    line-height: 40px;
+    @extend %rubik-500;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  &__item{
+    @extend %rubik-400;
+    margin-left: 23px;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  &__text{
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+}
+.about{
+  padding: 120px 0 110px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    margin-right: 40px;
+  }
+}
+.about-content{
+  max-width: 570px;
+  padding: 85px 0;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    &:nth-child(2){
+      flex-direction: column;
+      margin-bottom: 100px;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -60px;
+        border-bottom: 2px solid #ebeef3;
+      }
+    }
+  }
+  &__years{
+    font-size: 140px;
+    line-height: 32px;
+    color: #a3bbc8;
+    @extend %rubik-700;
+  }
+  &__expirence{
+    padding-right: 280px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    @extend %rubik-400;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-left: -50px;
+    margin-bottom: 45px;
+  }
+  &__text{
+    color: #243f4d;
+    margin-bottom: 65px;
+  }
+  &__img{
+    display: block;
+    margin-right: 20px;
+  }
+  &__item{
+    display: flex;
+  }
+  &__benefit{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+  }
+  &__subtitle{
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+    @extend %dmans-700;
+  }
+}
+
+.benefits{
+  padding: 85px 0 75px;
+  background-color: #fcd7b6;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  &__img{
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+  }
+}
+.team{
+  padding: 115px 0 100px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 300px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-bottom: 25px;
+  }
+  &__text{
+    color: #243f4d;
+    @extend %rubik-400;
+    margin-bottom: 40px;
+    
+  }
+  &__link-item{
+    position: relative;
+  }
+  &__link{
+    border-radius: 5px;
+    max-width: 170px;
+    display: block;
+    text-align: center;
+    padding: 15px 45px 15px 5px;
+    background-color: #a3bbc8;
+    border: none;
+    color: #fff;
+  }
+  &__link-img{
+    display: inline-block;;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    bottom: 27px;
+    left: 125px;
+
+    
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+    &__item{
+      position: relative;
+    }
+  }
+}
+
+.team-position{
+  padding: 25px 0 25px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 320px;
+  height: 105px;
+  margin-top: -50px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  &__social{
+    display: flex;
+  }
+  &__title{
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+    @extend %dmans-700;
+  }
+  &__text{
+    color: #565872;
+    @extend %rubik-400;
+  }
+}
+
+
+
+
+
 
 
 @import 'media';
