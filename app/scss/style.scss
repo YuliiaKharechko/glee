@@ -1100,12 +1100,12 @@ padding: 75px 0 75px;
     display: block;
     cursor: pointer;
   }
+  &__label--active{
+    background-color: #edf1f4;
+    border-radius: 5px;
+  }
   &__input{
     @extend %checkbox-hidden;
-    &:checked + .filter-category__checkbox{
-      background-color: #edf1f4;
-      border-radius: 5px;
-    }
   }
   &__checkbox{
     padding: 15px 17px;
@@ -1207,12 +1207,36 @@ padding: 75px 0 75px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px 30px;
+
+    &.shop-content__inner--active{
+      display: block;
+      max-width: 100%;
+      .products-item{
+        min-width: 870px;
+        box-shadow: none;
+        margin-bottom: 40px;
+        display: flex;
+        text-align: left;
+      }
+      .products-item__img-box{
+        min-width: 370px;
+        height: 500px;
+        border: 1px solid #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .products-item__title{
+        margin-left: 55px;
+      }
+    }
     &.products-item{
       max-width: 270px;
-    } 
+      
+    }  
   }
-  
 }
+
 
 .pagination{
   display: flex;

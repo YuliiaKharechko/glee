@@ -93,10 +93,10 @@
             <div class="filter__item filter-category">
                 <h3 class="filter__title">Category</h3>
                 <form class="filter-category__form"action="#">
-                  <label class="filter-category__label">
-                      <input class="filter-category__input" type="checkbox" checked >
-                      <div class="filter-category__checkbox">
-                        <button class="filter-category__btn filter-category__btn--active" type="button"  data-filter=".chair">Chair</button>
+                  <label class="filter-category__label filter-category__label--active" data-filter="chair">
+                      <input class="filter-category__input" type="checkbox" checked>
+                      <div class="filter-category__checkbox filter-category__checkbox--active">
+                        <button class="filter-category__btn">Chair</button>
                         <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
                           <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
@@ -104,10 +104,10 @@
                         </svg>
                       </div>
                   </label>
-                  <label class="filter-category__label">
+                  <label class="filter-category__label" data-filter="table">
                       <input class="filter-category__input" type="checkbox">
                       <div class="filter-category__checkbox">
-                        <button class="filter-category__btn" data-filter=".table">Table</button>
+                        <button class="filter-category__btn">Table</button>
                         <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
                           <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
@@ -115,10 +115,10 @@
                         </svg>
                       </div>
                   </label>
-                  <label class="filter-category__label">
+                  <label class="filter-category__label" data-filter="lamp">
                       <input class="filter-category__input" type="checkbox">
                       <div class="filter-category__checkbox">
-                        <button class="filter-category__btn" data-filter=".lamp">Lamp</button>
+                        <button class="filter-category__btn">Lamp</button>
                         <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
                           <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
@@ -126,10 +126,10 @@
                         </svg>
                       </div>
                   </label>
-                  <label class="filter-category__label">
+                  <label class="filter-category__label" data-filter="watch">
                       <input class="filter-category__input" type="checkbox">
                       <div class="filter-category__checkbox">
-                        <button class="filter-category__btn" data-filter=".watch">Watch</button>
+                        <button class="filter-category__btn">Watch</button>
                         <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
                           <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
@@ -137,10 +137,10 @@
                         </svg>
                       </div>
                   </label>
-                  <label class="filter-category__label">
+                  <label class="filter-category__label" data-filter="clock">
                       <input class="filter-category__input" type="checkbox">
                       <div class="filter-category__checkbox">
-                        <button class="filter-category__btn" data-filter=".clock">Clock</button>
+                        <button class="filter-category__btn">Clock</button>
                         <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
                           <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
@@ -242,7 +242,7 @@
           </div>  
           <div class="shop-content">
             <div class="shop-content__inner">
-              <div class="products-item">
+              <div class="products-item chair">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_1.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -271,7 +271,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item">
+              <div class="products-item chair">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_2.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -300,7 +300,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item">
+              <div class="products-item watch">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_3.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -329,7 +329,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item">
+              <div class="products-item clock">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_4.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -358,7 +358,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix clock">
+              <div class="products-item chair">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_5.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -387,7 +387,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix watch">
+              <div class="products-item lamp">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_4.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -416,7 +416,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix chair">
+              <div class="products-item chair">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_6.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -445,7 +445,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix chair">
+              <div class="products-item table">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_7.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -474,7 +474,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix table">
+              <div class="products-item table">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_8.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -503,7 +503,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix clock">
+              <div class="products-item clock">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_10.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -532,7 +532,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix table">
+              <div class="products-item table">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_11.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -561,7 +561,7 @@
                     </h4>
                     <div class="products-item__price">$29.00</div>
               </div>
-              <div class="products-item mix clock">
+              <div class="products-item clock">
                     <div class="products-item__img-box">
                       <img class="products-item__images" src="images/products/item_12.jpg" alt="products">
                       <div class="products-item__link-box">
@@ -606,7 +606,6 @@
               <a class="pagination__next" href="#">Next</a>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
@@ -718,6 +717,7 @@
   </footer>
 
   <script src="js/main.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 </body>
