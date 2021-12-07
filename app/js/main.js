@@ -1,7 +1,5 @@
 $(function () {
 
-  
-
   $('.filter-category__label').on('click', function () {
     const value = $(this).attr('data-filter');
     if (value == 'all'){
@@ -46,9 +44,8 @@ $(function () {
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
     },
-    
+
   });
-  
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
@@ -56,6 +53,36 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000
   });
+
+  $('.related-product__content').slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false,
+    arrows: false
+  });
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumb',
+    draggable: false,
+    arrows: false
+  });
+
+  $('.product-item__num').styler();
+
+  
+
+ 
+  
+
 
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
   var containerEl2 = document.querySelector('[data-ref="container-2"]');
