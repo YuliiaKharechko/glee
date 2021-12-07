@@ -1425,8 +1425,8 @@ padding: 75px 0 75px;
     color: #243f4d;
     margin-bottom: 30px;
   }
-  
   &__btn{
+    display: inline-block;
     margin-left: 15px;
     width: 200px;
     border-radius: 6px;
@@ -1438,6 +1438,7 @@ padding: 75px 0 75px;
     background-color: #a3bbc8;
     border: none;
     cursor: pointer;
+    z-index: 5;
   }
 
 
@@ -1452,78 +1453,66 @@ padding: 75px 0 75px;
     padding: 0 38px;
 }
 
-
 .jq-number__field {
     width: 100px;
-    border: 1px solid #CCC;
-    border-bottom-color: #B3B3B3;
-    border-radius: 4px;
-    box-shadow: inset 1px 1px #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
+    height: 48px;
+    border: 1px solid #a3bbc8;
+    border-bottom-color: #a3bbc8;
+    border-radius: 0;
+    background-color: #fff;
+    
 }
 .jq-number__field input {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 100%;
-    padding: 8px 9px;
+    padding: 8px 0;
     border: none;
     outline: none;
     background: none;
-    font: 14px Arial, sans-serif;
     color: #333;
+    text-align: center;
+    
 }
 .number-plus-minus .jq-number__field input {
     text-align: center;
 }
-.number-plus-minus .jq-number__spin::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 12px;
-    height: 2px;
-    border: none;
-    background: #666;
-}
-.number-plus-minus .jq-number__spin.plus::after {
-    top: 10px;
-    left: 15px;
-    width: 2px;
-    height: 12px;
-    border: none;
-    background: #666;
-}
-.number-plus-minus .jq-number__spin.plus {
-    right: 0;
-    left: auto;
+
+
+.jq-number__spin.minus {
+    top: auto;
+    bottom: -7px;
+    right: 120px;
 }
 .jq-number__spin {
     position: absolute;
     top: 0;
     right: 0;
-    width: 32px;
-    height: 14px;
-    border: 1px solid #CCC;
-    border-bottom-color: #B3B3B3;
-    border-radius: 4px;
-    background: linear-gradient(#FFF, #E6E6E6);
-    box-shadow: 0 1px 2px rgba(0,0,0,.1);
-    box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
+    left: 99px;
+    width: 50px;
+    height: 48px;
+    border: 1px solid #a3bbc8;
+    border-bottom-color: #a3bbc8;
+    border-radius: 0;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-shadow: 1px 1px #FFF;
     cursor: pointer;
-}
-.jq-number__spin::after {
-    content: '';
+}  
+
+
+.jq-number__spin.minus::after {
+    content: "-";
     position: absolute;
     top: 4px;
-    left: 11px;
+    left: 20px;
     width: 0;
     height: 0;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid #999;
-    border-left: 5px solid transparent;
+}
+.jq-number__spin.plus::after {
+    content: "+";
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    width: 0;
+    height: 0;
 }
 .number-plus-minus .jq-number__field {
     width: 60px;
@@ -1535,11 +1524,11 @@ padding: 75px 0 75px;
 .jq-number__spin.minus {
     top: auto;
     bottom: 0;
+    left: 0px;
 }
-.number-plus-minus .jq-number__spin {
-    left: 0;
-    height: 32px;
-}
+
+
+
 
 .product-slide{
   &__thumb{
@@ -1635,6 +1624,38 @@ padding: 75px 0 75px;
     color: #243f4d;
   }
 }
+.slick-prev.slick-arrow {
+  position: absolute;
+  right: 60px;
+  top: -110px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/icons/arrow-left.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+  background-color: transparent;
+  border: 1px solid #edf1f4;
+  border-radius: 6px;
+}
+.slick-next.slick-arrow {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/icons/arrow-right.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+  position: absolute;
+  bottom: 480px;
+  right: 0;
+  background-color: transparent;
+  border: 1px solid #edf1f4;
+  border-radius: 6px;
+}
+.slick-prev.slick-arrow:hover,
+.slick-next.slick-arrow:hover{
+  border: 1px solid #a3bbc8;
+}
 
 .related-product{
   margin-bottom: 110px;
@@ -1647,7 +1668,8 @@ padding: 75px 0 75px;
   &__content{
     .products-item{
       height: 375px;
-      
+      margin: 20px 0;
+      border: none
     }
   }
 }
