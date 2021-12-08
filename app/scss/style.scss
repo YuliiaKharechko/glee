@@ -1088,6 +1088,7 @@ padding: 75px 0 75px;
     margin-bottom: 65px;
   }
   &__title{
+    text-transform: uppercase;
     font-size: 18px;
     color: #243f4d;
     @extend %dmans-700;
@@ -1775,7 +1776,7 @@ padding: 75px 0 75px;
     position: relative;
   }
   &__aside{
-    width: 270px;
+    width: 290px;
   }
   &__title {
     padding-top: 40px;
@@ -1793,6 +1794,7 @@ padding: 75px 0 75px;
   }
   
 }
+
 .blog-box{
   position: absolute;
   bottom: 292px;
@@ -1846,6 +1848,66 @@ padding: 75px 0 75px;
     left: 125px;
   }
 }
+.filter__item {
+  padding: 0;
+  position: relative;
+}
+
+.filter-search {
+  &__input{
+    width: 240px;
+    height: 45px;
+    border: 1px solid #ebf1f3;
+    outline: none;
+    padding-left: 10px;
+  }
+  &__btn{
+    width: 50px;
+    height: 45px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #ebf1f3;
+    background-color:#edf1f4;
+    cursor: pointer;
+  }
+}
+
+.filter-recent{
+  &__item{
+    width: 275px;
+    display: flex;
+  }
+  &__img-link{
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  &__content-img{
+    object-fit: cover;
+  }
+  &__content-title{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  &__content-date{
+    font-size: 12px;
+    @extend %rubik-400;
+    color: #9a9a9a;
+    & i{
+      color: #9a9a9a;
+      margin-right: 5px;
+    }
+  }
+}
+
 
 @import 'media';
 
