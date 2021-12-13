@@ -1,0 +1,33 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+@import '../..node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+
+@import '../..node_modules/rateyo/min/jquery.rateyo.min.css';
+
+@import '../..node_modules/ion-rangeslider/css/ion.rangeSlider.min.css';
+
+@import '../..node_modules/jquery-form-styler/dist/jquery.formstyler.css';
+
+@import '../..node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css';
+
+@import '../module/_header/_header';
+@import '../module/_footer/_footer';
+@import '../module/_top-slider/_top-slider';
+@import '../module/_features/_features';
+@import '../module/_products/_products';
+@import '../module/_products-item/_products-item';
+@import '../module/_product-item/_product-item';
+@import '../module/_blog-details/_blog-details';
+@import '../module/_lights/_lights';
+@import '../module/_news/_news';
+@import '../module/_video/_video';
+@import '../module/_blog/_blog';
+@import '../module/_clients/_clients';

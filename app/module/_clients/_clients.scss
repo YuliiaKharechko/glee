@@ -1,0 +1,11 @@
+.clients{
+  padding: 250px 0 85px;
+  background-color: #fef7f0;
+  &-items{
+    display: flex;
+    justify-content: space-around;
+  }
+  &.clients-shop{
+    padding: 100px 0 85px;
+  }
+}

@@ -1,0 +1,111 @@
+.product-tabs{
+  padding: 50px 0 120px;
+  &__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__top-item + .product-tabs__top-item{
+    margin-left: 15px;
+  }
+  &__top-item{
+    width: 240px;
+    height: 50px;
+    @extend %rubik-500;
+    color: #243f4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #edf1f4;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    cursor: pointer;
+  }
+
+  &__top-item--active{
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+  &__content-item{
+    display: none;
+    @extend %rubik-400;
+    color: #243f4d;
+    &.product-tabs__content-item--active{
+      display: block;
+    }
+  }
+}
+
+.coments-form{
+  &__title{
+    width: 250px;
+    font-size: 22px;
+    @extend %dmans-500;
+    color: #243f4d;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #a3bbc8;
+  }
+  &__rating-title{
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  &__label{
+    margin-left: 25px;
+  }
+  
+  &__radio i{
+    cursor: pointer;
+    color: #d6d6d6;
+  }
+  &__input{
+    @extend %radio-hidden;
+    &:checked + .coments-form__radio{
+      i{
+        color: #ffcc00; 
+      }
+    }
+  }
+  &__box-input{
+    margin-bottom: 30px;
+    display: flex;justify-content: space-between;
+  }
+  &__text-input{ 
+    width: 570px;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #a3bbc8;
+    &::placeholder{
+      color: #243f4d;
+    }
+  }
+  &__textarea{
+    border: 1px solid #a3bbc8;
+    padding: 15px 20px;
+    width: 100%;
+    height: 225px;
+    resize: none;
+    margin-bottom: 30px;
+    &::placeholder{
+      color: #243f4d;
+    }
+  }
+  &__btn{
+    display: inline-block;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px 0 10px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    @extend %rubik-500;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
+  }
+}

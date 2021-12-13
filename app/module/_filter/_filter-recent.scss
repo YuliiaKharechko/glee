@@ -1,0 +1,30 @@
+.filter-recent{
+  &__item{
+    width: 275px;
+    display: flex;
+  }
+  &__img-link{
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  &__content-img{
+    object-fit: cover;
+  }
+  &__content-title{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  &__content-date{
+    font-size: 12px;
+    @extend %rubik-400;
+    color: #9a9a9a;
+    & i{
+      color: #9a9a9a;
+      margin-right: 5px;
+    }
+  }
+}

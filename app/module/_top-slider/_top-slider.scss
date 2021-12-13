@@ -1,0 +1,71 @@
+.top-slider{
+  padding: 224px 0 45px;
+  background-image: url('../images/slider-bg-elipce.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #fcd7b6;
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 210px;
+  }
+  &__title{
+    max-width: 430px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title;
+    @extend %rubik-500;
+    margin-bottom: 40px;
+  }
+  &__text{
+    max-width: 330px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $accent;
+    @extend %rubik-400;
+    margin-bottom: 40px;
+  }
+  &__link-item{
+    max-width: 200px;
+    max-height: 62px;
+    background-color: $accent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__link{
+    height: 100%;
+    font-size: 15px;
+    line-height: 12;
+    color: #ffffff;
+    padding: 21px 0 24px;
+    @extend %rubik-500
+  }
+  &__link-img{
+    height: 100%;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 0 5px;
+      button{
+        padding: 0;
+        font-size: 10px;
+        line-height: 0;
+        text-align: center;
+        background-color: #fde3cc;
+        color: $title;
+        width: 28px;
+        height: 28px;
+        border: 1px solid #fde3cc;
+        border-radius: 50%;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+        }
+      }
+    }
+  }    
+}

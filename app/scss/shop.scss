@@ -1,0 +1,20 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+@import '../module/_header/_header';
+@import '../module/_footer/_footer';
+@import '../module/_top/_top';
+@import '../module/_filter/_filter-category';
+@import '../module/_filter/_filter-price';
+@import '../module/_filter/_filter-brand';
+@import '../module/_filter/_filter-recent-shop';
+@import '../module/_shop/_shop';
+@import '../module/_products/_products';
+@import '../module/_product-item/_product-item';
+@import '../module/_products-item/_products-item';
+@import '../module/_pagination/_pagination';
+
+@import '../module/_clients/_clients';

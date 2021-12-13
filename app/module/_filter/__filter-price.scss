@@ -1,0 +1,60 @@
+.filter{
+  &__item{
+    padding: 35px 30px 30px;
+    margin-bottom: 65px;
+  }
+  &__title{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-bottom: 25px;
+    position: relative;
+    &::after{
+      content: "";
+      width: 45px;
+      position: absolute;
+      border-top: 2px solid #a3bbc8;
+      top: 15px;
+      margin-left: 15px;
+    }
+  }
+}
+.filter-price{
+  &__from{
+    margin-right: 220px;
+    
+  }
+}
+
+.irs--flat .irs-line {
+  top: 25px;
+  height: 2px;
+  background-color: #a3bbc8;
+  border-radius: 0;
+}
+
+.irs--flat .irs-handle {
+  top: 18px;
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  display: none;  
+}
+
+.irs--flat .irs-bar {
+    top: 24px;
+    height: 4px;
+    background-color: #a3bbc8;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+    display: none;
+}
+
+.irs-from, .irs-to, .irs-single {
+    display: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cc9b7751e6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/shop.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  {% include 'app/module/_header/_header.html' %}
+
+  <main class="main">
+    {% include 'app/module/_top/_top.html' %}
+    
+    <section class="shop">
+      <div class="container-s">
+        <div class="shop__inner">
+          <div class="shop__filters-wrapper">
+            <div class="shop__filters filter">
+            
+              {% include 'app/module/_filter/_filter-category.html' %}
+              {% include 'app/module/_filter/_filter-price.html' %}
+              {% include 'app/module/_filter/_filter-brand.html' %}
+              {% include 'app/module/_filter/_filter-recent-shop.html' %}
+
+            </div>
+          </div>  
+          <div class="shop-content">
+            <div class="shop-content__inner">
+              {% include 'app/module/_products-item/_products-item.html' %}
+            </div>
+            {% include 'app/module/_pagination/_pagination.html' %}
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include 'app/module/_clients/_clients.html' %}
+  </main>
+
+  {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</body>
+
+</html>

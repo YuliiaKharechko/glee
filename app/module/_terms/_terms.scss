@@ -1,0 +1,21 @@
+.terms{
+  padding: 110px 0 70px;
+  &__title{
+    font-size: 24px;
+    line-height: 40px;
+    @extend %rubik-500;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  &__item{
+    @extend %rubik-400;
+    margin-left: 23px;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  &__text{
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+}

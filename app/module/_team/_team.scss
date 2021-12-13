@@ -1,0 +1,79 @@
+.team{
+  padding: 115px 0 100px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 300px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-bottom: 25px;
+  }
+  &__text{
+    color: #243f4d;
+    @extend %rubik-400;
+    margin-bottom: 40px;
+    
+  }
+  &__link-item{
+    position: relative;
+  }
+  &__link{
+    border-radius: 5px;
+    max-width: 170px;
+    display: block;
+    text-align: center;
+    padding: 15px 45px 15px 5px;
+    background-color: #a3bbc8;
+    border: none;
+    color: #fff;
+  }
+  &__link-img{
+    display: inline-block;;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    bottom: 27px;
+    left: 125px;
+
+    
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+    &__item{
+      position: relative;
+    }
+  }
+}
+
+.team-position{
+  padding: 25px 0 25px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 320px;
+  height: 105px;
+  margin-top: -50px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  &__social{
+    display: flex;
+  }
+  &__title{
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+    @extend %dmans-700;
+  }
+  &__text{
+    color: #565872;
+    @extend %rubik-400;
+  }
+}

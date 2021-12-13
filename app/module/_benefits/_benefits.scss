@@ -1,0 +1,27 @@
+.benefits{
+  padding: 85px 0 75px;
+  background-color: #fcd7b6;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  &__img{
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+  }
+}

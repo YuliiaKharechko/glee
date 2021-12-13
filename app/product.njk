@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cc9b7751e6.js" crossorigin="anonymous"></script>
+  <link href="путь_к_файлу/jquery.formstyler.css" rel="stylesheet" />
+  <link href="путь_к_файлу/jquery.formstyler.theme.css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="путь_к_файлу/jquery.formstyler.min.js"></script>
+  <link rel="stylesheet" href="css/product.min.css">
+  <title>Document</title>
+</head>
+<body>
+  {% include 'app/module/_header/_header.html' %}
+  <main class="main">
+    {% include 'app/module/_top/_top.html' %}
+    <section class="product">
+      <div class="container-s">
+        {% include 'app/module/_product-item/_product-item.html' %}  
+      </div>
+    </section>
+    <section class="related-product">
+      <div class="container-s">
+          <h2 class="related-product__title">
+          Related products
+          </h2>
+          {% include 'app/module/_product-tabs/_product-tabs.html' %}
+        <div class="related-product__content">
+          {% include 'app/module/_products-item/_products-item.html' %}
+        </div>
+      </div>
+    </section>
+    {% include 'app/module/_blog/_blog.html' %}
+    {% include 'app/module/_clients/_clients.html' %}
+  </main>
+  {% include 'app/module/_footer/_footer.html' %} 
+  <script src="js/main.min.js"></script>
+</body>
+</html>
