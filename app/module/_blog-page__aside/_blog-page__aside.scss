@@ -1,0 +1,334 @@
+.filter{
+  &__item{
+    padding: 35px 30px 30px;
+    margin-bottom: 65px;
+  }
+  &__title{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-bottom: 25px;
+    position: relative;
+    &::after{
+      content: "";
+      width: 45px;
+      position: absolute;
+      border-top: 2px solid #a3bbc8;
+      top: 15px;
+      margin-left: 15px;
+    }
+  }
+}
+.filter-category{
+  &__label{
+    display: block;
+    cursor: pointer;
+  }
+  &__label--active{
+    background-color: #edf1f4;
+    border-radius: 5px;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+  }
+  &__checkbox{
+    padding: 15px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #243f4d;
+    @extend %rubik-400;
+    cursor: pointer;
+  }
+  &__btn{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+.blog-box{
+  position: absolute;
+  bottom: 294px;
+  width: 275px;
+  height: 70px;
+  display: flex;
+  padding: 25px 0 25px;
+  background-color: #a3bbc8;
+  justify-content: center;
+  align-items: center;
+  &__date{
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    & i{
+      padding-right: 5px;
+    }
+  }
+  &__author{
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    & i{
+      padding-right: 5px;
+    }
+  }
+}
+
+.blog-page__link-item{
+  padding: 20px 0;
+  background-color: transparent;
+  border: 1px solid #a3bbc8;
+  border-radius: 3px;
+  max-width: 180px;
+  position: relative;
+  color: #a3bbc8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  .blog-page__link{
+    display: block;
+    color: #a3bbc8;
+  }
+  &__link-img{
+    display: inline-block;;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    bottom: 27px;
+    left: 125px;
+  }
+}
+.filter__item {
+  padding: 0;
+  position: relative;
+}
+
+.filter-search {
+  &__input{
+    width: 240px;
+    height: 45px;
+    border: 1px solid #ebf1f3;
+    outline: none;
+    padding-left: 10px;
+  }
+  &__btn{
+    width: 50px;
+    height: 45px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #ebf1f3;
+    background-color:#edf1f4;
+    cursor: pointer;
+  }
+}
+
+.filter-recent{
+  &__item{
+    width: 275px;
+    display: flex;
+  }
+  &__img-link{
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  &__content-img{
+    object-fit: cover;
+  }
+  &__content-title{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  &__content-date{
+    font-size: 12px;
+    @extend %rubik-400;
+    color: #9a9a9a;
+    & i{
+      color: #9a9a9a;
+      margin-right: 5px;
+    }
+  }
+}
+
+.blog-details{
+  padding: 120px 0 110px;
+  &__text{
+    h4{
+      font-size: 36px;
+      line-height: 27px;
+      color: #333333;
+      @extend %rubik-400;
+      margin: 30px 0;
+    }
+    h5{
+      font-size: 16px;
+      line-height: 30px;
+      @extend %rubik-500;
+      color: #243f4d;
+      margin: 40px 0 30px;
+    }
+    blockquote{
+      padding: 20px 0 20px 30px;
+      background-color: #edf1f4;
+      @extend %rubik-400;
+      color: #243f4d;
+      border-left: 6px solid #a3bbc8;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    span{
+      display: block;
+      margin-left: 50px;
+      &::before{
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid #a3bbc8; 
+        width: 25px;
+        bottom: 32px;
+        left: 30px;
+
+      }
+    }
+    p{
+      @extend %rubik-400;
+      color: #565872;
+      margin-bottom: 40px;
+    }
+  }
+  &__left-img{
+    float: left;
+    margin-right: 30px;
+
+  }
+  &__right-img{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  &__img{
+    position: relative;
+  }
+  &__box{
+    position: absolute;
+    top: 431px;
+  }
+  &__form{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__comment-title{
+    font-size: 24px;
+    color: #436372;
+    @extend %rubik-700;
+    margin-bottom: 40px;
+  }  
+  &__text-input{ 
+    width: 500px;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #a3bbc8;
+    &::placeholder{
+      color: #243f4d;
+      position: relative;
+    }
+  }
+  &__text-input + .blog-details__text-input{
+    margin-left: 30px;
+  }
+  &__textarea{
+    border: 1px solid #a3bbc8;
+    padding: 15px 20px;
+    width: 100%;
+    height: 225px;
+    resize: none;
+    margin-bottom: 30px;
+    &::placeholder{
+      color: #243f4d;
+    }
+  }
+  &__btn{
+    display: inline-block;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px 0 10px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    @extend %rubik-500;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
+  }
+  &__comment-box{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 840px;
+      border-top: 1px solid #e0e0e0;
+      top: 20px;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 840px;
+      bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+  &__author{
+    display: flex;
+  }
+  &__author-img{ 
+    margin-right: 25px;
+  }
+  &__author-name{
+    font-size: 18px;
+    @extend %rubik-500;
+    color: #333333;
+  }
+  &__author-text{
+    @extend %rubik-400;
+    color: #666666;
+  }
+  &__tag{
+    @extend %rubik-400;
+    line-height: 24px;
+    color: #333333;
+    & a{
+      margin-left: 10px;
+      text-decoration: none;
+      color: #999999;
+      cursor: pointer;
+    }
+  }
+  &__share{
+    @extend %rubik-400;
+    line-height: 24px;
+    color: #333333;
+    & a{
+      margin-left: 10px;
+      text-decoration: none;
+      color: #999999;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+.filter-brand{
+  &__checkbox{
+    padding: 15px 17px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    @extend %rubik-400;
+    cursor: pointer;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+  }
+}

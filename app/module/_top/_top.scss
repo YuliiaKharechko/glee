@@ -1,0 +1,50 @@
+.top__container{
+  text-align: center;
+  padding: 35px 0 34px;
+  width: 100%;
+  height: 125px;
+  margin: 0 auto;
+  background-color: #edf1f4;
+  &__title{
+    font-size: 36px;
+    line-height: 24px;
+    @extend %rubik-400;
+    color: #222933;
+  }
+  
+}
+
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+  &__item + .breadcrumbs__item{
+    padding-left: 25px;
+  }
+  &__item {
+    position: relative;
+    &::after{
+      content: "/";
+      position: absolute;
+      font-size: 18px;
+      @extend %rubik-400;
+      color: #9a9ea2;
+      top: 0;
+      right: -15px;
+    }
+    &:last-child{
+      color: #9a9ea2;
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: #9a9ea2;
+  }
+}

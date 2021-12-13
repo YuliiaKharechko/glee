@@ -1,0 +1,76 @@
+.about{
+  padding: 120px 0 110px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    margin-right: 40px;
+  }
+}
+.about-content{
+  max-width: 570px;
+  padding: 85px 0;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    &:nth-child(2){
+      flex-direction: column;
+      margin-bottom: 100px;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -60px;
+        border-bottom: 2px solid #ebeef3;
+      }
+    }
+  }
+  &__years{
+    font-size: 140px;
+    line-height: 32px;
+    color: #a3bbc8;
+    @extend %rubik-700;
+  }
+  &__expirence{
+    padding-right: 280px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    @extend %rubik-400;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-left: -50px;
+    margin-bottom: 45px;
+  }
+  &__text{
+    color: #243f4d;
+    margin-bottom: 65px;
+  }
+  &__img{
+    display: block;
+    margin-right: 20px;
+  }
+  &__item{
+    display: flex;
+  }
+  &__benefit{
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    @extend %dmans-700;
+  }
+  &__subtitle{
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+    @extend %dmans-700;
+  }
+}

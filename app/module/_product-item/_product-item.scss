@@ -1,0 +1,254 @@
+
+
+
+
+.product{
+  padding: 120px 0  60px;
+}
+.product-item{
+  &__inner{
+    display: flex;
+  }
+  &__slide{
+    width: 550px;
+    margin-right: 65px;
+    display: flex;
+  }
+  &__content{
+    width: 540px;
+    
+  }
+  &__title{
+    padding-top: 30px;
+    font-size: 40px;
+    line-height: 26,43px;
+    @extend %rubik-400;
+    color: #333333;
+  }
+  &__star{
+    display: block;
+    padding: 25px 0 30px;
+
+    & a{
+      color: #ffcc00;
+    }
+    & a:last-child{
+      color: #d6d6d6;
+    }
+    & a:hover{
+      color: #dd6b1a;
+    }
+  }
+  &__price{
+    padding-top: 35px;
+    font-size: 40px;
+    line-height: 45px;
+    @extend %rubik-400;
+    color: #333333;
+  }
+  &__text{
+    padding-top: 30px;
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  &__btn{
+    display: inline-block;
+    margin-left: 15px;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px 0 10px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    @extend %rubik-500;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+
+}
+.jq-number {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding: 0 36px 0 0;
+}
+.number-plus-minus .jq-number {
+    padding: 0 38px;
+}
+
+.jq-number__field {
+    width: 100px;
+    height: 48px;
+    border: 1px solid #a3bbc8;
+    border-bottom-color: #a3bbc8;
+    border-radius: 0;
+    background-color: #fff;
+    
+}
+.jq-number__field input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: #333;
+    text-align: center;
+    transform: translateX(-9px);
+    
+}
+.number-plus-minus .jq-number__field input {
+    text-align: center;
+}
+
+
+.jq-number__spin.minus {
+    top: auto;
+    bottom: -7px;
+    right: 120px;
+}
+.jq-number__spin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 99px;
+    width: 50px;
+    height: 48px;
+    border: 1px solid #a3bbc8;
+    border-bottom-color: #a3bbc8;
+    border-radius: 0;
+    -webkit-user-select: none;
+    cursor: pointer;
+}  
+
+
+.jq-number__spin.minus::after {
+    content: "-";
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 0;
+    height: 0;
+}
+.jq-number__spin.plus::after {
+    content: "+";
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 0;
+    height: 0;
+}
+.number-plus-minus .jq-number__field {
+    width: 60px;
+}
+.number-plus-minus .jq-number__field {
+    width: 60px;
+}
+
+.jq-number__spin.minus {
+    top: auto;
+    bottom: 0;
+    left: 0px;
+}
+
+
+
+
+.product-slide{
+  &__thumb{
+    width: 140px;
+    margin-right: 30px;
+  }
+  &__thumb-item{
+    width: 140px;
+    height: 160px;
+    cursor: pointer;
+    margin-bottom: 13px;
+    
+    img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      height: 160px;
+      border: 1px solid #f2f2f2;
+      object-fit: cover;
+      padding: 10px;
+    }
+  }
+  &__big{
+    width: 385px;
+    img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 385px;
+      height: 530px;
+      padding: 65px 80px;
+      object-fit: cover;
+      border: 1px solid #f2f2f2;
+    }
+  }
+}
+
+.product-info{
+  padding-top: 57px;
+  &__item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__title{
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-right: 6px;
+  }
+
+  &__text{
+    @extend %rubik-400;
+    color: #243f4d;
+  }
+  &__link{
+    display: block;
+    color: #243f4d;
+    cursor: pointer;
+  }
+}
+
+
+.slick-prev.slick-arrow {
+  position: absolute;
+  right: 60px;
+  top: -110px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/icons/arrow-left.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+  background-color: transparent;
+  border: 1px solid #edf1f4;
+  border-radius: 6px;
+}
+.slick-next.slick-arrow {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/icons/arrow-right.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+  position: absolute;
+  bottom: 480px;
+  right: 0;
+  background-color: transparent;
+  border: 1px solid #edf1f4;
+  border-radius: 6px;
+}
+.slick-prev.slick-arrow:hover,
+.slick-next.slick-arrow:hover{
+  border: 1px solid #a3bbc8;
+}

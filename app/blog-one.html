@@ -5,87 +5,84 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/cc9b7751e6.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/blog-one.min.css">
   <title>Document</title>
 </head>
 <body>
   <header class="header">
-    <div class="container-b">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="logo">
-          Glee.
+  <div class="container-b">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo">
+        Glee.
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Home +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Pages +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__img user-nav__img--search" src="images/icons/search_icon.svg" alt="search icon">
         </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home +</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages +</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
+        <div class="user-nav__bar">
           <a class="user-nav__link" href="#">
-            <img class="user-nav__img user-nav__img--search" src="images/icons/search_icon.svg" alt="search icon">
+            <img class="user-nav__img user-nav__img--heart" src="images/icons/heart_icon.svg" alt="heart icon">
+            <span class="user-nav__num">0</span>
           </a>
-          <div class="user-nav__bar">
-            <a class="user-nav__link" href="#">
-              <img class="user-nav__img user-nav__img--heart" src="images/icons/heart_icon.svg" alt="heart icon">
-              <span class="user-nav__num">0</span>
-            </a>
-            <a class="user-nav__link" href="#">
-              <img class="user-nav__img user-nav__img--cart" src="images/icons/cart_icon.svg" alt="cart icon">
-              <span class="user-nav__num">0</span>
-            </a>
-          </div>
           <a class="user-nav__link" href="#">
-            <img class="user-nav__img user-nav__img--burger" src="images/icons/burger-icon.svg" alt="burger icon">
+            <img class="user-nav__img user-nav__img--cart" src="images/icons/cart_icon.svg" alt="cart icon">
+            <span class="user-nav__num">0</span>
           </a>
         </div>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__img user-nav__img--burger" src="images/icons/burger-icon.svg" alt="burger icon">
+        </a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
   <main class="main">
     <section class="top">
-      <div class="top__container">
-        <div class="container">
-          <h2 class="top__title">Blog Details</h2>
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">
-                  Blog
-                </a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">
-                  Blog details
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div class="top__container">
+      <div class="container">
+        <h2 class="top__title">Log in</h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Log in
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </div> 
+    </div>
+  </section>
+  
     <section class="blog-page blog-details">
       <div class="container-s">
         <div class="blog-page__inner">
@@ -232,237 +229,235 @@
           </div>
           <div class="blog-page__aside">
             <div class="filter-search filter__item">
-              <form  class="filter-search__form"action="#">
-                <input class="filter-search__input" type="text">
-                <button class="filter-search__btn" type="submit">
-                  <img src="images/icons/search_icon.png" alt="search imagen">
-                </button>
-              </form>
-            </div>
-
+  <form  class="filter-search__form"action="#">
+    <input class="filter-search__input" type="text">
+    <button class="filter-search__btn" type="submit">
+      <img src="images/icons/search_icon.png" alt="search imagen">
+    </button>
+  </form>
+</div>
             <div class="filter__item filter-category">
-              <h3 class="filter__title">Category</h3>
-              <form class="filter-category__form" action="#">
-                <label class="filter-category__label filter-category__label--active" data-filter="chair">
-                  <input class="filter-category__input" type="checkbox" checked>
-                  <div class="filter-category__checkbox filter-category__checkbox--active">
-                    <button class="filter-category__btn">Chair</button>
-                    <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="6px" height="10px">
-                      <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
-                        d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.124 5.36,5.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.906 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.133,4.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.489 5.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0.67 0.123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.758 L0.141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.484 0.344,9.538 0.472,9.538 Z" />
-                    </svg>
-                  </div>
-                </label>
-                <label class="filter-category__label" data-filter="table">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <button class="filter-category__btn">Table</button>
-                    <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="6px" height="10px">
-                      <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
-                        d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.124 5.36,5.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.906 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.133,4.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.489 5.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0.67 0.123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.758 L0.141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.484 0.344,9.538 0.472,9.538 Z" />
-                    </svg>
-                  </div>
-                </label>
-                <label class="filter-category__label" data-filter="lamp">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <button class="filter-category__btn">Lamp</button>
-                    <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="6px" height="10px">
-                      <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
-                        d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.124 5.36,5.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.906 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.133,4.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.489 5.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0.67 0.123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.758 L0.141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.484 0.344,9.538 0.472,9.538 Z" />
-                    </svg>
-                  </div>
-                </label>
-                <label class="filter-category__label" data-filter="watch">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <button class="filter-category__btn">Watch</button>
-                    <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="6px" height="10px">
-                      <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
-                        d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.124 5.36,5.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.906 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.133,4.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.489 5.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0.67 0.123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.758 L0.141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.484 0.344,9.538 0.472,9.538 Z" />
-                    </svg>
-                  </div>
-                </label>
-                <label class="filter-category__label" data-filter="clock">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <button class="filter-category__btn">Clock</button>
-                    <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="6px" height="10px">
-                      <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
-                        d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.124 5.36,5.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.906 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.133,4.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.489 5.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0.67 0.123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.758 L0.141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.484 0.344,9.538 0.472,9.538 Z" />
-                    </svg>
-                  </div>
-                </label>
-              </form>
-            </div>
-
+  <h3 class="filter__title">Category</h3>
+  <form class="filter-category__form" action="#">
+    <label class="filter-category__label filter-category__label--active" data-filter="chair">
+      <input class="filter-category__input" type="checkbox" checked>
+      <div class="filter-category__checkbox filter-category__checkbox--active">
+        <button class="filter-category__btn">Chair</button>
+        <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://worg/1999/xlink"
+          width="6px" height="10px">
+          <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
+            d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.1245.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.7141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.344,9.538 0.472,9.538 Z" />
+        </svg>
+      </div>
+    </label>
+    <label class="filter-category__label" data-filter="table">
+      <input class="filter-category__input" type="checkbox">
+      <div class="filter-category__checkbox">
+        <button class="filter-category__btn">Table</button>
+        <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://worg/1999/xlink"
+          width="6px" height="10px">
+          <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
+            d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.1245.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.7141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.344,9.538 0.472,9.538 Z" />
+        </svg>
+      </div>
+    </label>
+    <label class="filter-category__label" data-filter="lamp">
+      <input class="filter-category__input" type="checkbox">
+      <div class="filter-category__checkbox">
+        <button class="filter-category__btn">Lamp</button>
+        <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://worg/1999/xlink"
+          width="6px" height="10px">
+          <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
+            d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.1245.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.7141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.344,9.538 0.472,9.538 Z" />
+        </svg>
+      </div>
+    </label>
+    <label class="filter-category__label" data-filter="watch">
+      <input class="filter-category__input" type="checkbox">
+      <div class="filter-category__checkbox">
+        <button class="filter-category__btn">Watch</button>
+        <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://worg/1999/xlink"
+          width="6px" height="10px">
+          <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
+            d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.1245.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.7141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.344,9.538 0.472,9.538 Z" />
+        </svg>
+      </div>
+    </label>
+    <label class="filter-category__label" data-filter="clock">
+      <input class="filter-category__input" type="checkbox">
+      <div class="filter-category__checkbox">
+        <button class="filter-category__btn">Clock</button>
+        <svg class="filter-category__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://worg/1999/xlink"
+          width="6px" height="10px">
+          <path fill-rule="evenodd" fill="rgb(36, 63, 77)"
+            d="M0.472,9.538 C0.590,9.538 0.709,9.492 0.802,9.398 L5.24,5.133 C5.28,5.128 5.32,5.1245.119 C5.76,5.76 5.108,5.28 5.131,4.975 C5.131,4.975 5.131,4.977 5.131,4.974 C5.162,4.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.756 5.177,4.755 C5.176,4.683 5.162,4.611 5.544 C5.133,4.543 5.133,4.543 5.132,4.543 C5.132,4.543 5.132,4.543 5.132,4.543 C5.109,4.76,4.439 5.35,4.395 C5.32,4.391 5.28,4.387 5.24,4.383 L0.802,0.118 C0.608,0.75 0.306,0123,0.138 C0.34,0.237 0.7,0.363 0.7,0.490 C0.7,0.626 0.42,0.761 0.141,0.862 L3.998,4.7141,8.654 C0.42,8.755 0.7,8.890 0.7,9.26 C0.7,9.153 0.34,9.280 0.123,9.378 C0.217,9.344,9.538 0.472,9.538 Z" />
+        </svg>
+      </div>
+    </label>
+  </form>
+</div>
             <div class="filter-recent">
-              <h3 class="filter__title">Recent Posts</h3>
-              <div class="filter-recent__item">
-                <a class="filter-recent__img-link" href="#">
-                  <img class="filter-recent__content-img" src="images/blog/recent-1.jpg" alt="recent images" class="filter-recent__img">
-                </a> 
-                <div class="filter-recent__content">
-                  <a class="filter-recent__content-link"  href="#" >
-                    <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
-                  </a>
-                  <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
-                </div>
-              </div>
-              <div class="filter-recent__item">
-                <a class="filter-recent__img-link" href="#">
-                  <img class="filter-recent__content-img" src="images/blog/recent-2.jpg" alt="recent images"
-                    class="filter-recent__img">
-                </a>
-                <div class="filter-recent__content">
-                  <a class="filter-recent__content-link" href="#">
-                    <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
-                  </a>
-                  <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
-                </div>
-              </div>
-              <div class="filter-recent__item">
-                <a class="filter-recent__img-link" href="#">
-                  <img class="filter-recent__content-img" src="images/blog/recent-3.jpg" alt="recent images"
-                    class="filter-recent__img">
-                </a>
-                <div class="filter-recent__content">
-                  <a class="filter-recent__content-link" href="#">
-                    <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
-                  </a>
-                  <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
-                </div>
-              </div>
-              <div class="filter-recent__item">
-                <a class="filter-recent__img-link" href="#">
-                  <img class="filter-recent__content-img" src="images/blog/recent-4.jpg" alt="recent images"
-                    class="filter-recent__img">
-                </a>
-                <div class="filter-recent__content">
-                  <a class="filter-recent__content-link" href="#">
-                    <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
-                  </a>
-                  <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
-                </div>
-              </div>
-            </div>
+  <h3 class="filter__title">Recent Posts</h3>
+  <div class="filter-recent__item">
+    <a class="filter-recent__img-link" href="#">
+      <img class="filter-recent__content-img" src="images/blog/recent-1.jpg" alt="recent images" class="filter-recent__img">
+    </a> 
+    <div class="filter-recent__content">
+      <a class="filter-recent__content-link"  href="#" >
+        <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
+      </a>
+      <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
+    </div>
+  </div>
+  <div class="filter-recent__item">
+    <a class="filter-recent__img-link" href="#">
+      <img class="filter-recent__content-img" src="images/blog/recent-2.jpg" alt="recent images"
+        class="filter-recent__img">
+    </a>
+    <div class="filter-recent__content">
+      <a class="filter-recent__content-link" href="#">
+        <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
+      </a>
+      <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
+    </div>
+  </div>
+  <div class="filter-recent__item">
+    <a class="filter-recent__img-link" href="#">
+      <img class="filter-recent__content-img" src="images/blog/recent-3.jpg" alt="recent images"
+        class="filter-recent__img">
+    </a>
+    <div class="filter-recent__content">
+      <a class="filter-recent__content-link" href="#">
+        <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
+      </a>
+      <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
+    </div>
+  </div>
+  <div class="filter-recent__item">
+    <a class="filter-recent__img-link" href="#">
+      <img class="filter-recent__content-img" src="images/blog/recent-4.jpg" alt="recent images"
+        class="filter-recent__img">
+    </a>
+    <div class="filter-recent__content">
+      <a class="filter-recent__content-link" href="#">
+        <h4 class="filter-recent__content-title">Corem ipsum dolor tetur adipisicing elit</h4>
+      </a>
+      <p class="filter-recent__content-date"><i class="far fa-calendar-alt"></i>28 JANUARY, 2020</p>
+    </div>
+  </div>
+</div>
 
           </div>
         </div>
         
       </div>
     </section>
-    <section class="clients clients-shop">
-      <div class="container-s">
-        <div class="clients-items">
-          <div class="clients-item">
-            <img class="clients-item__img" src="images/clients/1.png" alt="clients logo">
-          </div>
-          <div class="clients-item">
-            <img class="clients-item__img" src="images/clients/2.png" alt="clients logo">
-          </div>
-          <div class="clients-item">
-            <img class="clients-item__img" src="images/clients/3.png" alt="clients logo">
-          </div>
-          <div class="clients-item">
-            <img class="clients-item__img" src="images/clients/4.png" alt="clients logo">
-          </div>
-          <div class="clients-item">
-            <img class="clients-item__img" src="images/clients/5.png" alt="clients logo">
-          </div>
-        </div>
+    <section class="clients">
+  <div class="container-s">
+    <div class="clients-items">
+      <div class="clients-item">
+        <img class="clients-item__img" src="images/clients/1.png" alt="clients logo" >
       </div>
-    </section>
+      <div class="clients-item">
+        <img class="clients-item__img" src="images/clients/2.png" alt="clients logo">
+      </div>
+      <div class="clients-item">
+        <img class="clients-item__img" src="images/clients/3.png" alt="clients logo">
+      </div>
+      <div class="clients-item">
+        <img class="clients-item__img" src="images/clients/4.png" alt="clients logo">
+      </div>
+      <div class="clients-item">
+        <img class="clients-item__img" src="images/clients/5.png" alt="clients logo">
+      </div>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer class="footer">
-    <div class="container-s">
-      <div class="footer-top">
-        <div class="footer-top__item">
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="logo">
-            Glee.
-          </a>
-          <a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane
-            Houston, TX 77032</a>
-          <a class="footer-top__phone" href="tel:+8323475843">Telephone:+832-347-5843</a>
-          <a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
-        </div>
-        <div class="footer-top__item">
-          <h6 class="footer-top__title">Services</h6>
-          <ul class="footer-top__services-list">
-            <li class="footer-top__services-item">
-              <a class="footer-top__services-link" href="#">About us</a>
-            </li>
-            <li class="footer-top__services-item">
-              <a class="footer-top__services-link" href="#">Return Policy</a>
-            </li>
-            <li class="footer-top__services-item">
-              <a class="footer-top__services-link" href="#">Our Blog</a>
-            </li>
-            <li class="footer-top__services-item">
-              <a class="footer-top__services-link" href="#">Contact Us</a>
-            </li>
-            <li class="footer-top__services-item">
-              <a class="footer-top__services-link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item">
-          <h6 class="footer-top__title">Account</h6>
-          <ul class="footer-top__account-list">
-            <li class="footer-top__account-item">
-              <a class="footer-top__account-link" href="#">Your Account</a>
-            </li>
-            <li class="footer-top__account-item">
-              <a class="footer-top__account-link" href="#">Checkout</a>
-            </li>
-            <li class="footer-top__account-item">
-              <a class="footer-top__account-link" href="#">Login</a>
-            </li>
-            <li class="footer-top__account-item">
-              <a class="footer-top__account-link" href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item-newsletter">
-          <h6 class="footer-top__title">newsletter</h6>
-          <a class="footer-top__newsletter-link" href="#">Subscribe by our newsletter and get
-            update protidin.</a>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
-        </div>
+  <div class="container-s">
+    <div class="footer-top">
+      <div class="footer-top__item">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+          Glee.
+        </a>
+        <a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane
+          Houston, TX 77032</a>
+        <a class="footer-top__phone" href="tel:+8323475843">Telephone:+832-347-5843</a>
+        <a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </div>
-        <nav class="footer-menu">
-          <ul class="footer-menu__list">
-            <li class="footer-menu__list-item">
-              <a class="footer-menu__list-link" href="#">Home</a>
-            </li>
-            <li class="footer-menu__list-item">
-              <a class="footer-menu__list-link" href="#">About</a>
-            </li>
-            <li class="footer-menu__list-item">
-              <a class="footer-menu__list-link" href="#">Blog</a>
-            </li>
-            <li class="footer-menu__list-item">
-              <a class="footer-menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="footer-top__item">
+        <h6 class="footer-top__title">Services</h6>
+        <ul class="footer-top__services-list">
+          <li class="footer-top__services-item">
+            <a class="footer-top__services-link" href="#">About us</a>
+          </li>
+          <li class="footer-top__services-item">
+            <a class="footer-top__services-link" href="#">Return Policy</a>
+          </li>
+          <li class="footer-top__services-item">
+            <a class="footer-top__services-link" href="#">Our Blog</a>
+          </li>
+          <li class="footer-top__services-item">
+            <a class="footer-top__services-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer-top__services-item">
+            <a class="footer-top__services-link" href="#">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__item">
+        <h6 class="footer-top__title">Account</h6>
+        <ul class="footer-top__account-list">
+          <li class="footer-top__account-item">
+            <a class="footer-top__account-link" href="#">Your Account</a>
+          </li>
+          <li class="footer-top__account-item">
+            <a class="footer-top__account-link" href="#">Checkout</a>
+          </li>
+          <li class="footer-top__account-item">
+            <a class="footer-top__account-link" href="#">Login</a>
+          </li>
+          <li class="footer-top__account-item">
+            <a class="footer-top__account-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__item footer-top__item-newsletter">
+        <h6 class="footer-top__title">newsletter</h6>
+        <a class="footer-top__newsletter-link" href="#">Subscribe by our newsletter and get
+          update protidin.</a>
+        <form class="footer-top__form" action="#">
+          <input class="footer-top__form-input" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <div class="footer-bottom__copy">
+        ©2020 CopyRight Example. All rights reserved.
+      </div>
+      <nav class="footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__list-link" href="#">Home</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__list-link" href="#">About</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__list-link" href="#">Blog</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__list-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
 
   <script src="js/main.min.js"></script>
 </body>

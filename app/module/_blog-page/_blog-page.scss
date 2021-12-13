@@ -1,0 +1,85 @@
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 830px;
+    margin-right: 65px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__aside{
+    width: 290px;
+  }
+  &__title {
+    padding-top: 40px;
+    font-size: 36px;
+    line-height: 27px;
+    @extend %rubik-400;
+    color: #333333;
+    margin-bottom: 35px;
+    
+  }
+  &__item-text{
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  
+}
+.blog-box{
+  position: absolute;
+  bottom: 294px;
+  width: 275px;
+  height: 70px;
+  display: flex;
+  padding: 25px 0 25px;
+  background-color: #a3bbc8;
+  justify-content: center;
+  align-items: center;
+  &__date{
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    & i{
+      padding-right: 5px;
+    }
+  }
+  &__author{
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    & i{
+      padding-right: 5px;
+    }
+  }
+}
+
+.blog-page__link-item{
+  padding: 20px 0;
+  background-color: transparent;
+  border: 1px solid #a3bbc8;
+  border-radius: 3px;
+  max-width: 180px;
+  position: relative;
+  color: #a3bbc8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  .blog-page__link{
+    display: block;
+    color: #a3bbc8;
+  }
+  &__link-img{
+    display: inline-block;;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    bottom: 27px;
+    left: 125px;
+  }
+}
