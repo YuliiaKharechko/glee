@@ -9,3 +9,23 @@
     padding: 100px 0 85px;
   }
 }
+
+
+@media (max-width: 890px){
+  .clients{
+    padding: 200px 0 65px;
+    &-items{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px 20px;
+    }
+  } 
+}
+
+@media (max-width: 570px){
+  .clients{
+    &-items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  } 
+}

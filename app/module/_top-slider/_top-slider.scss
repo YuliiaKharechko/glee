@@ -28,22 +28,24 @@
   &__link-item{
     max-width: 200px;
     max-height: 62px;
-    background-color: $accent;
+    background-color: #a3bbc8;
     display: flex;
-    justify-content: space-around;
     align-items: center;
   }
   &__link{
-    height: 100%;
     font-size: 15px;
     line-height: 12;
     color: #ffffff;
-    padding: 21px 0 24px;
-    @extend %rubik-500
+    padding: 21px 29px 21px;
+    @extend %rubik-500;
+    position: relative;
   }
   &__link-img{
-    height: 100%;
+    position: absolute;
+    bottom: 105px;
+    left: 120px;
   }
+  
   .slick-dots{
     display: flex;
     justify-content: center;
@@ -68,4 +70,148 @@
       }
     }
   }    
+}
+
+@media (max-width: 1245px){
+  .top-slider{
+    padding: 190px 0 45px;
+    &__item{
+      padding-left: 10px;
+    }
+    &__img{
+      width: 70%;
+      height: 50%;
+    }
+    &__title {
+      max-width: 410px;
+      font-size: 60px;
+      line-height: 60px;
+      color: #243f4d;
+      margin-bottom: 20px;
+    }
+    &__text {
+      max-width: 325px;
+      font-size: 17px;
+      line-height: 26px;
+      margin-bottom: 25px;
+    }
+    &__link-item{
+      max-width: 155px;
+      max-height: 50px;
+    }
+  }
+    
+}  
+
+@media (max-width: 985px){
+  .top-slider{
+    padding: 170px 0 45px;
+    &__img{
+      width: 60%;
+      height: 50%;
+    }
+    &__title {
+      max-width: 370px;
+      font-size: 45px;
+      line-height: 51px;
+    }
+    &__text {
+      max-width: 270px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__link-item{
+      max-width: 125px;
+      max-height: 40px;
+    }
+    &__link{
+      font-size: 12px;
+    }
+  }
+  .slick-slide.slick-cloned {
+    width: 932px;
+    height: 400px;
+  }
+}
+@media (max-width: 850px){
+  .top-slider{
+    padding: 110px 0 40px;
+    &__title {
+      max-width: 250px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+    &__text {
+      max-width: 210px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__link-item{
+      max-width: 125px;
+      max-height: 40px;
+    }
+    &__link{
+      font-size: 12px;
+    }
+  }
+  .slick-list.draggable {
+    height: 300px;
+  } 
+}
+
+@media (max-width: 630px){
+  .top-slider{
+    padding: 85px 0 30px;
+    &__title {
+      max-width: 200px;
+      font-size: 22px;
+      line-height: 27px;
+    }
+    &__text {
+      max-width: 150px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__link-item{
+      max-width: 100px;
+      max-height: 30px;
+    }
+    &__link{
+      font-size: 10px;
+    }
+  }
+  .slick-list.draggable {
+    height: 210px;
+  } 
+  .top-slider .slick-dots li button {
+    font-size: 8px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+@media (max-width: 630px){
+  .top-slider{
+    &__title {
+      max-width: 150px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+    &__text {
+      max-width: 120px;
+      font-size: 10px;
+      line-height: 16px;
+    }
+    &__link-item{
+      max-width: 80px;
+      max-height: 25px;
+    }
+    &__link{
+      font-size: 8px;
+    }
+  }
+  .slick-list.draggable {
+    height: 210px;
+  } 
 }

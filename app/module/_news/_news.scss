@@ -1,5 +1,5 @@
 .news{
-padding: 75px 0 75px;
+  padding: 75px 0 75px;
   &-products__title {
     text-align: center;
     font-size: 36px;
@@ -70,21 +70,21 @@ padding: 75px 0 75px;
     border: 1px solid #a3bbc8;
   }
   &:hover{
-      .news-item__link-box{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        margin: 0 auto;
-        width: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-        transition: all .3s;
-        transform: translateY(300%);
-      }
-    }  
+    .news-item__link-box{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0 auto;
+      width: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      transition: all .3s;
+      transform: translateY(300%);
+    }
+  }  
   &__title{
     max-width: 170px;
     padding: 40px 0 0 20px;
@@ -103,4 +103,27 @@ padding: 75px 0 75px;
     padding: 20px 0 0 20px;
   }
 
+}
+@media (max-width: 1240px){
+  .news{
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .news-products__title{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .news-items{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 810px){
+  .news-item{
+    width: 100%;
+  }
 }

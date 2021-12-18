@@ -1,0 +1,16 @@
+.related-product{
+  margin-bottom: 110px;
+  &__title{
+    font-size: 36px;
+    color: #243f4d;
+    @extend %dmans-700;
+    margin-bottom: 75px;
+  }
+  &__content{
+    .products-item{
+      height: 375px;
+      margin: 20px 0;
+      border: none
+    }
+  }
+}

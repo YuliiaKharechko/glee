@@ -1,11 +1,10 @@
 .video{
   padding: 50px 0 60px;
   &__item{
-    max-width: 100%;
     height: 500px;
     background-image: url('../images/video-bg.jpg');
     background-repeat: no-repeat;
-    background-size: center center;
+    background-position: top center;
     background-size: cover;
     position: relative;
   }
@@ -19,3 +18,43 @@
     text-align: center;
   }
 }
+
+@media (max-width: 1150px){
+  .video{
+    padding: 0;
+    margin-bottom: -100px;
+    &__item{
+      background-size: auto 70%;
+    }
+    &__btn{
+      top: 200px;
+      height: 20%;
+    }
+  }
+} 
+
+
+@media (max-width: 890px){
+  .video{
+    margin-bottom: -170px;
+    &__item{
+      background-size: auto 50%;
+    }
+    &__btn{
+      top: 130px;
+      height: 15%;
+    }
+  }
+} 
+@media (max-width: 560px){
+  .video{
+    margin-bottom: -235px;
+    &__item{
+      background-size: auto 40%;
+    }
+    &__btn{
+      top: 100px;
+      height: 10%;
+    }
+  }
+} 

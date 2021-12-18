@@ -5,7 +5,7 @@
 .footer-top{
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   color: #7b7b7b;
   margin-bottom: 70px;
   .logo{
@@ -103,4 +103,57 @@
       right: -20px;
     }
   } 
+}
+
+@media (max-width: 925px){
+  .footer-top{
+    flex-wrap: wrap;
+    &__item{
+      margin-left: 20px;
+    }
+    &__item-newsletter{
+      margin-left: 20px;
+    }
+  }
+  
+}
+
+@media (max-width: 895px){
+  .footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    &__item{
+      max-width: 100%;
+      min-height: 265px;
+      margin-top: 30px;
+      text-align: left;
+    }
+    &__item a{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+    &__form{
+      max-width: 100%;  
+    }
+  }
+  
+}
+
+@media (max-width: 665px){  
+  .footer-bottom{
+    flex-direction: column;
+    &__copy{
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .footer-menu{
+    text-align: center;
+    padding-right: 0;
+    margin: 10px auto;
+  }
 }
