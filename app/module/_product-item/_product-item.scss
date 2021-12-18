@@ -1,7 +1,4 @@
 
-
-
-
 .product{
   padding: 120px 0  60px;
 }
@@ -16,7 +13,6 @@
   }
   &__content{
     width: 540px;
-    
   }
   &__title{
     padding-top: 30px;
@@ -67,8 +63,6 @@
     cursor: pointer;
     z-index: 5;
   }
-
-
 }
 .jq-number {
     display: inline-block;
@@ -98,8 +92,7 @@
     background: none;
     color: #333;
     text-align: center;
-    transform: translateX(-9px);
-    
+    transform: translateX(-9px);  
 }
 .number-plus-minus .jq-number__field input {
     text-align: center;
@@ -154,9 +147,6 @@
     bottom: 0;
     left: 0px;
 }
-
-
-
 
 .product-slide{
   &__thumb{
@@ -218,7 +208,6 @@
     cursor: pointer;
   }
 }
-
 
 .slick-prev.slick-arrow {
   position: absolute;

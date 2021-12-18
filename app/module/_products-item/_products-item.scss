@@ -11,12 +11,14 @@
     .products-item{
       height: 375px;
       margin: 20px 0;
-      border: none;
+      border: none
     }
   }
 }
+
 .shop-content{
   padding: 70px 0 70px;
+  margin-left: 40px;
   &__inner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
