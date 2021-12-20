@@ -26,12 +26,16 @@
 }
 
 .filter-search {
+  &__form{
+    display: flex;
+  }
   &__input{
     width: 240px;
     height: 45px;
     border: 1px solid #ebf1f3;
     outline: none;
     padding-left: 10px;
+    position: relative;
   }
   &__btn{
     width: 50px;

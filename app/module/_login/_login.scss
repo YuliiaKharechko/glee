@@ -61,7 +61,21 @@
     border: 2px solid #a3bbc8;
     text-align: center;
     font-size: 18px;
-    
     color: #243f4d;
+  }
+}
+
+@media (max-width: 615px) {
+  .modal{
+    padding-top: 60px;
+    &__btn{
+      font-size: 16px;
+    }
+    &__error{
+      margin-left: 150px;
+    }
+    &__link{
+      font-size: 16px;
+    }
   }
 }

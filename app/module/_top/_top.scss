@@ -1,20 +1,20 @@
-.top__container{
-  text-align: center;
-  padding: 35px 0 34px;
-  width: 100%;
-  height: 125px;
-  margin: 0 auto;
-  background-color: #edf1f4;
+.top{
+  &__container{
+    text-align: center;
+    padding: 35px 0 34px;
+    width: 100%;
+    height: 125px;
+    margin: 0 auto;
+    background-color: #edf1f4;
+  }
   &__title{
     font-size: 36px;
     line-height: 24px;
     @extend %rubik-400;
     color: #222933;
+    margin-bottom: 20px;
   }
-  
-}
-
-.breadcrumbs{
+  .breadcrumbs{
   display: flex;
   justify-content: center;
   &__list{
@@ -46,5 +46,38 @@
     font-size: 14px;
     line-height: 24px;
     color: #9a9ea2;
+  }
+}  
+}
+
+
+@media (max-width: 850px){
+  .top{
+    &__container{
+    height: 120px;
+    padding: 25px 0 34px;
+    } 
+    &__title{
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .breadcrumbs__link{
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 570px){
+  .top{
+    &__container{
+      height: 90px;
+      padding: 15px 0 14px;
+    } 
+    &__title{
+      font-size: 18px;
+    }
+    .breadcrumbs__link{
+      font-size: 12px;
+    }
   }
 }
