@@ -40,8 +40,6 @@
     height: 11px;
     bottom: 27px;
     left: 125px;
-
-    
   }
   &__items{
     display: grid;
@@ -59,7 +57,7 @@
   display: flex;
   justify-content: space-around;
   position: absolute;
-  width: 320px;
+  width: 325px;
   height: 105px;
   margin-top: -50px;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -69,11 +67,97 @@
   &__title{
     font-size: 22px;
     line-height: 26px;
+    padding-left: 5px;
     color: #436372;
     @extend %dmans-700;
   }
   &__text{
+    padding-left: 5px;
     color: #565872;
     @extend %rubik-400;
   }
+  &__link {
+    display: inline-block;
+  }
+  .team-posiotion__link+ .team-posiotion__link{
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1200px){
+  .team{
+    padding: 60px 0 80px;
+    &__inner{
+      flex-direction: column;
+    }
+    &__content{
+      max-width: 100%;
+    }
+    &__title{
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 22px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    &__link {
+      font-size: 12px;
+      max-width: 113px;
+      padding: 7px 35px 7px 5px;
+      margin-bottom: 30px;
+    }
+    &__link-img{
+      bottom: 18px;
+      left: 88px;
+    }
+    &__items{
+      margin: 0 auto;
+    }
+  }
+  .team-position{
+    padding: 15px 0 15px;
+    width: 290px;
+    height: 85px;
+    &__title{
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__text{
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 985px){
+  .team{
+    &__title{
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 875px){
+  .team{
+    &__items{
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 60px 30px;
+    }
+  }
+  .team-position{
+    &__title{
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 10px;
+      line-height: 20px;
+    }
+  }  
 }
