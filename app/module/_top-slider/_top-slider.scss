@@ -28,6 +28,7 @@
   &__link-item{
     max-width: 200px;
     max-height: 62px;
+    border-radius: 6px;
     background-color: #a3bbc8;
     display: flex;
     align-items: center;
@@ -125,9 +126,15 @@
       max-height: 40px;
     }
     &__link{
+      padding: 21px 13px 21px;
       font-size: 12px;
     }
+    &__link-img{
+      bottom: 88px;
+      left: 77px;
+    }
   }
+  
   .slick-slide.slick-cloned {
     width: 932px;
     height: 400px;
@@ -178,6 +185,12 @@
     }
     &__link{
       font-size: 10px;
+    }
+    &__link-img{
+      width: 16px;
+      height: 9px;
+      bottom: 64px;
+      left: 55px;
     }
   }
   .slick-list.draggable {

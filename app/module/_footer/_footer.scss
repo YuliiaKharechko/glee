@@ -122,7 +122,6 @@
   .footer-top{
     display: flex;
     flex-wrap: wrap;
-    
     align-items: center;
     &__item{
       max-width: 100%;
@@ -132,8 +131,10 @@
     }
     &__item a{
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
+      font-size: 12px;
+      line-height: 18px;
       text-align: left;
     }
     &__form{
