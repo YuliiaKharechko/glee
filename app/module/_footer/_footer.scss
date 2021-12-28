@@ -111,6 +111,9 @@
     &__item{
       margin-left: 20px;
     }
+    &__title{
+      margin-bottom: 15px;
+    }
     &__item-newsletter{
       margin-left: 20px;
     }
@@ -125,7 +128,7 @@
     align-items: center;
     &__item{
       max-width: 100%;
-      min-height: 265px;
+      min-height: 190px;
       margin-top: 30px;
       text-align: left;
     }

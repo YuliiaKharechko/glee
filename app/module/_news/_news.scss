@@ -11,6 +11,8 @@
   &__items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
     grid-gap: 34px 30px;
   }
 }
@@ -42,7 +44,6 @@
     height: 245px;
     overflow: hidden;
     position: relative;
-    
   }  
   &__images{
     display: inline-block;
@@ -57,7 +58,6 @@
     background-color: #fff;
     margin-right: 10px;
     transition: all .3s;
-    
   }
   &__link{
     display: inherit;

@@ -109,9 +109,12 @@
   .products{
     &__items{
       grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-content: center;
     }
   }
   .products-item{
+    margin: 0 auto;
     max-width: 100%;
   }
 }
@@ -119,8 +122,9 @@
   .products{
     &__items{
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 40px 20px;
-      justify-items: center;
+      
+      align-content: center;
+      justify-content: center;
     }
   }
 }
